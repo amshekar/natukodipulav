@@ -72,3 +72,51 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Deploying a React App to GitHub Pages
+
+This guide outlines how to deploy your React app to GitHub Pages, keeping the build files separate in a dedicated branch.
+
+**Prerequisites:**
+
+* A React project
+* A GitHub repository
+
+**Steps:**
+
+1. **Install `gh-pages`:**
+
+   ```bash
+   npm install --save-dev gh-pages
+Add the following scripts to your `package.json` file:
+
+**2. Configure Build Scripts:**
+
+```json
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+This defines two scripts:
+
+- `predeploy`: Runs before deployment and builds your React app using the standard `npm run build` command, generating the static build files in the `build` folder.
+- `deploy`: Uses the `gh-pages` package to push the contents of the `build` folder to a new commit on the `gh-pages` branch.
+
+
+**3. Set homepage Property:**
+-In your `package.json`, add the following:
+
+```json
+"homepage": "[https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/)"
+**4. Configure GitHub Pages:**
+
+- Go to your repository settings.
+- Under "Pages," select the `gh-pages` branch as the publishing source.
+
+**5. Deploy:**
+
+```bash
+npm run deploy
+
+This will build your app and push the generated files to the gh-pages branch, making them accessible through your GitHub Pages URL.

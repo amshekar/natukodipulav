@@ -120,8 +120,8 @@ Add the following scripts to your `package.json` file:
 
 **2. Configure Build Scripts:**
 
-```json
-"scripts":{ 
+  ```json```
+  "scripts":{ 
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"  
    }
@@ -134,7 +134,7 @@ This defines two scripts:
 **3. Set homepage Property:**
 -In your `package.json`, add the following:
 
-```json
+```json```
 "homepage": "[https://your-username.github.io/your-repo-name/](https://your-username.github.io/your-repo-name/)"
 **4. Configure GitHub Pages:**
 

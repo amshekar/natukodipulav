@@ -93,10 +93,10 @@ Add the following scripts to your `package.json` file:
 **2. Configure Build Scripts:**
 
 ```json
-"scripts": {
+"scripts": 
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build"
-}
+
 
 This defines two scripts:
 

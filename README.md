@@ -120,3 +120,24 @@ This defines two scripts:
 npm run deploy
 
 This will build your app and push the generated files to the gh-pages branch, making them accessible through your GitHub Pages URL.
+
+
+## Run App with Email functionality
+
+### npm i
+Installs node modules required to run the application.\
+
+### npm run build
+Builds the app for production to the `build` folder.\
+
+Now copy build directory and
+### cd backend
+Enter into backend path.\
+
+Now paste the build directory in backend directory.\
+
+### npm i
+Installs node modules required to run backend application.\
+
+### npm start
+Runs the Application with backend features.

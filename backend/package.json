@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "homepage": "https://tarungajamoni.github.io/'natukodi_pulav'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.1",
+    "nodemailer": "^6.9.13",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  }
+}
